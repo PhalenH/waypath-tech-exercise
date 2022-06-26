@@ -1,0 +1,53 @@
+body {
+  font-family: lato;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: aquamarine;
+}
+button {
+  background-color: aquamarine;
+}
+
+.with-background-img {
+  background-image: url("./assets/photo-couch.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.more-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.more-info h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.article-item {
+  display: flex;
+}
+
+.article-number {
+
+}
+
+.article-action {
+  
+}
+
+.article-info {
+  
+}
