@@ -1,5 +1,5 @@
 :root {
-  --like-aqua: #47e4c2;
+  --like-aqua: #1abe9b;
   --info-text: #2f3237;
 }
 body {
@@ -18,10 +18,8 @@ header {
 
 /* I used CSS filter to change the color of the SVG to match the mock */
 img {
-  filter: invert(83%) sepia(83%) saturate(383%) hue-rotate(87deg) brightness(91%) contrast(95%);
-}
-button {
-  background-color: var(--like-aqua);
+  filter: invert(83%) sepia(83%) saturate(383%) hue-rotate(87deg)
+    brightness(91%) contrast(95%);
 }
 
 .with-background-img {
@@ -33,17 +31,58 @@ button {
   background-size: cover;
   color: white;
   box-sizing: border-box;
+  padding: 0% 0% 0% 10%;
   display: flex;
+  align-items: flex-end;
+}
+.img-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 50%;
+  padding-bottom: 10%;
+}
+.img-info h2 {
+  font-weight: lighter;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 1em;
+}
+.img-info h3 {
+  font-size: 3em;
+  font-weight: lighter;
+  margin: 0;
+}
+.img-info p {
+  padding: 1.5em 0em;
+  margin: 0;
+}
+button {
+  background-color: var(--like-aqua);
+  color: var(--info-text);
+  border: none;
+  font-weight: bolder;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+button:hover {
+  background-color: rgb(19, 143, 116);
+  color: white;
+}
+button:active {
+  background-color: rgb(23, 94, 70);
+  color: white;
 }
 
 .more-info {
   margin: 0% 10%;
   color: var(--info-text);
+  padding: 25px 0px 100px 0px;
 }
 
 .more-info h2 {
   text-align: center;
-  /* font-size: 1.75em; */
 }
 
 .articles {
