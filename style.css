@@ -1,17 +1,27 @@
+:root {
+  --like-aqua: #47e4c2;
+  --info-text: #2f3237;
+}
 body {
   font-family: lato;
   margin: 0;
   height: 100%;
   width: 100%;
   padding: 0;
+  background-color: #f2f1ef;
 }
 
 header {
-  background-color: black;
-  color: aquamarine;
+  background-color: #222222;
+  padding: 1% 0% 1% 10%;
+}
+
+/* I used CSS filter to change the color of the SVG to match the mock */
+img {
+  filter: invert(83%) sepia(83%) saturate(383%) hue-rotate(87deg) brightness(91%) contrast(95%);
 }
 button {
-  background-color: aquamarine;
+  background-color: var(--like-aqua);
 }
 
 .with-background-img {
@@ -27,27 +37,37 @@ button {
 }
 
 .more-info {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0% 10%;
+  color: var(--info-text);
 }
 
 .more-info h2 {
-  width: 100%;
   text-align: center;
+  /* font-size: 1.75em; */
 }
 
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+}
 .article-item {
   display: flex;
+  flex-direction: column;
+  /* border: solid 1px red; */
+  width: 24%;
+  align-items: center;
+  text-align: center;
 }
-
 .article-number {
-
+  border-bottom: solid 3px var(--like-aqua);
+  margin: 0px;
+  padding-bottom: 5px;
+  font-size: 3em;
 }
-
 .article-action {
-  
+  margin: 0px;
+  padding-top: 5%;
 }
-
 .article-info {
-  
+  width: 66%;
 }
