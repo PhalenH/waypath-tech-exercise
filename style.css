@@ -24,6 +24,7 @@ img {
 
 .with-background-img {
   background-image: url("./assets/photo-couch.jpg");
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -109,4 +110,49 @@ button:active {
 }
 .article-info {
   width: 66%;
+}
+
+
+@media screen and (max-width: 1250px) {
+  .article-item {
+    width: 49%;
+  }
+  .img-info {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img-info h2 {
+    font-size: 1.25em;
+  }
+  .img-info h3 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .with-background-img {
+    padding: 10px;
+  }
+  .with-background-img {
+    justify-content: center;
+  }
+  .img-info {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .article-item {
+    width: 100%;
+  }
+  .with-background-img {
+    padding: 10px;
+  }
+  .img-info {
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+  }
 }
