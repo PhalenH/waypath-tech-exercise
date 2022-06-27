@@ -140,7 +140,7 @@ button:active {
   .img-info {
     justify-content: center;
     text-align: center;
-    width: 50%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -153,6 +153,5 @@ button:active {
   .img-info {
     justify-content: center;
     text-align: center;
-    width: 80%;
   }
 }
